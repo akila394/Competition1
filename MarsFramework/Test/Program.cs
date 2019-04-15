@@ -64,6 +64,20 @@ namespace MarsFramework
                 ssobj.ShareProfile("Save");
                 
             }
+
+            [Test]
+            public void DeleteManageListings()
+            {
+                // Creates a toggle for the given test, adds all log events under it
+                test = extent.StartTest("Delete share skill");
+
+                // Create an class and object to call the method
+                ManageListing obj = new ManageListing();
+                
+                obj.DeleteManageListing();
+
+                
+            }
         }
     }
 }
